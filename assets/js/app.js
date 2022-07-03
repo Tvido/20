@@ -18,6 +18,21 @@ window.addEventListener("scroll", () => {
 
 // =======================================================
 
+let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e) => {
+    let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+    arrowParent.classList.toggle("showMenu");
+  });
+}
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+sidebarBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
+});
+
+// =======================================================
+
 const theme = document.querySelector("#theme");
 const themeModal = document.querySelector(".customize__theme");
 const fontSize = document.querySelectorAll(".choose__size span");
@@ -96,10 +111,6 @@ colorPalette.forEach((color) => {
   });
 });
 
-// --color-light-lightness: 95%;
-// --color-white-lightness: 100%;
-// --color-dark-lightness: 17%;
-
 let colorLightLightness;
 let colorWhiteLightness;
 let colorDarkLightness;
@@ -119,7 +130,6 @@ bg1.addEventListener("click", () => {
   bg2.classList.remove("active");
   bg3.classList.remove("active");
   changeBg();
-  // window.location.reload();
 });
 
 bg2.addEventListener("click", () => {
