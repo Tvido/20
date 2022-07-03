@@ -285,9 +285,14 @@ nav i:hover {
   background: var(--color-white);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   html {
     font-size: 12px;
+  }
+
+  nav .container .brand,
+  .container__inner ul li span {
+    display: none;
   }
 }
 
@@ -718,12 +723,12 @@ nav i:hover {
   left: 78px;
   width: calc(100% - 78px);
 }
-.home-section .home-content {
+/* .home-section .home-content {
   height: 60px;
   display: flex;
   align-items: center;
-}
-.home-section .home-content .bx-menu,
+} */
+/* .home-section .home-content .bx-menu,
 .home-section .home-content .text {
   color: #11101d;
   font-size: 35px;
@@ -735,7 +740,7 @@ nav i:hover {
 .home-section .home-content .text {
   font-size: 26px;
   font-weight: 600;
-}
+} */
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu {
     display: none;
@@ -743,14 +748,15 @@ nav i:hover {
   .sidebar {
     width: 78px;
   }
+
   .sidebar.close {
     width: 0;
   }
-  .home-section {
+  /* .home-section {
     left: 78px;
     width: calc(100% - 78px);
     z-index: 100;
-  }
+  } */
   .sidebar.close ~ .home-section {
     width: 100%;
     left: 0;
