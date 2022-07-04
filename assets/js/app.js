@@ -145,7 +145,7 @@ bg2.addEventListener("click", () => {
 
 bg3.addEventListener("click", () => {
   colorLightLightness = "0%";
-  colorWhiteLightness = "10%";
+  colorWhiteLightness = "3%";
   colorDarkLightness = "95%";
 
   bg3.classList.add("active");
