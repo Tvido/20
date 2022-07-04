@@ -232,27 +232,17 @@
 
             <ul>
               <li>
-                <a href="#">текст 1</a>
+                <a href="#" data-nav-link>Розклад занять</a>
               </li>
 
               <li>
-                <a href="#">текст 2</a>
+                <a href="#" data-nav-link>Контакти</a>
               </li>
 
               <li>
-                <a href="#">текст 3</a>
-              </li>
-
-              <li>
-                <a href="#">текст 4</a>
+                <a href="#" data-nav-link>Про ліцей</a>
               </li>
             </ul>
-
-            <!-- <ul class="social__media">
-              <li>
-                <a href="#"> tvido</a>
-              </li>
-            </ul> -->
           </div>
         </div>
 
@@ -285,7 +275,7 @@
     </header>
 
     <main>
-      <section data-page="test">
+      <section class="test" data-page="test">
         <h3>section 1</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nobis
@@ -390,21 +380,5 @@
     </div>
 
     <script src="assets/js/app.js"></script>
-
-    <!-- <script>
-      let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener("click", (e) => {
-          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-          arrowParent.classList.toggle("showMenu");
-        });
-      }
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".bx-menu");
-      console.log(sidebarBtn);
-      sidebarBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
-      });
-    </script> -->
   </body>
 </html>

@@ -81,18 +81,19 @@ body {
 }
 
 header {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: url(../../assets/img/hero/hero.jpg);
   background-size: cover;
 }
 
 main {
-  padding: 2rem;
   background: var(--color-white);
 }
 
 section {
-  margin-left: 5rem;
+  padding-top: 5rem;
+  padding-left: 6rem;
+  min-height: 100vh;
 }
 
 main p {
@@ -130,10 +131,9 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 5rem 1rem 7rem;
+  padding: 0.75rem 5rem 0.75rem 7rem;
   z-index: 9;
   opacity: 0.95;
-  background: var(--color-white);
   transition: var(--transition);
   color: var(--color-white);
   box-shadow: 0 0 0.4rem var(--color-primary);
@@ -194,25 +194,6 @@ nav a:hover {
   align-items: center;
   padding: 0.5rem 0;
 }
-
-/* form input,
-form button {
-  background: none;
-  border: none;
-  color: var(--color-dark);
-}
-
-form button {
-  cursor: pointer;
-}
-
-form input::placeholder {
-  color: var(--color-dark);
-}
-
-form input:focus {
-  outline: none;
-} */
 
 nav i {
   font-size: 1rem;
@@ -723,24 +704,6 @@ nav i:hover {
   left: 78px;
   width: calc(100% - 78px);
 }
-/* .home-section .home-content {
-  height: 60px;
-  display: flex;
-  align-items: center;
-} */
-/* .home-section .home-content .bx-menu,
-.home-section .home-content .text {
-  color: #11101d;
-  font-size: 35px;
-}
-.home-section .home-content .bx-menu {
-  margin: 0 15px;
-  cursor: pointer;
-}
-.home-section .home-content .text {
-  font-size: 26px;
-  font-weight: 600;
-} */
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu {
     display: none;
@@ -752,11 +715,7 @@ nav i:hover {
   .sidebar.close {
     width: 0;
   }
-  /* .home-section {
-    left: 78px;
-    width: calc(100% - 78px);
-    z-index: 100;
-  } */
+
   .sidebar.close ~ .home-section {
     width: 100%;
     left: 0;

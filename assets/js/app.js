@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
 let arrow = document.querySelectorAll(".arrow");
 for (var i = 0; i < arrow.length; i++) {
   arrow[i].addEventListener("click", (e) => {
-    let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+    let arrowParent = e.target.parentElement.parentElement;
     arrowParent.classList.toggle("showMenu");
   });
 }
@@ -153,3 +153,23 @@ bg3.addEventListener("click", () => {
   bg2.classList.remove("active");
   changeBg();
 });
+
+// =======================================================
+
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", () => {
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+  });
+}
