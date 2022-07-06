@@ -41,7 +41,7 @@
   --sticke-top-right: -18rem;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 12px;
 }
 
@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--color-primary);
   border-radius: 10px;
   border: 2px solid var(--color-light);
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -81,8 +81,6 @@ body {
 }
 
 header {
-  /* min-height: 100vh; */
-  background: url(../../assets/img/hero/hero.jpg);
   background-size: cover;
 }
 
@@ -90,10 +88,59 @@ main {
   background: var(--color-white);
 }
 
+/* .hidden {
+  display: none !important;
+} */
+
+nav .topNav li a.active .link_names {
+  color: var(--color-primary);
+}
+
+.sidebar .nav-links li a.active .link_name {
+  color: var(--color-primary);
+}
+
 section {
+  display: block;
   padding-top: 5rem;
   padding-left: 6rem;
   min-height: 100vh;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--color-white);
+}
+
+section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSections 0.1s ease;
+}
+
+/* @keyframes slideSections {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+@keyframes slideSections {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 main p {
@@ -563,6 +610,7 @@ nav i:hover {
   align-items: center;
   text-decoration: none;
 }
+
 .sidebar .nav-links li a .link_name {
   font-size: 1rem;
   font-weight: 400;
@@ -692,18 +740,18 @@ nav i:hover {
 .sidebar .profile-details .job {
   font-size: 12px;
 }
-.home-section {
+/* .home-section {
   position: relative;
   background: #e4e9f7;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
-}
-.sidebar.close ~ .home-section {
+} */
+/* .sidebar.close ~ .home-section {
   left: 78px;
   width: calc(100% - 78px);
-}
+} */
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu {
     display: none;
@@ -716,42 +764,86 @@ nav i:hover {
     width: 0;
   }
 
-  .sidebar.close ~ .home-section {
+  /* .sidebar.close ~ section {
     width: 100%;
     left: 0;
-  }
+  } */
+}
+
+/*============================================================================*\
+  sections
+/*============================================================================*/
+
+/*-----------------------------------*\
+main
+\*-----------------------------------*/
+
+.scedule__bg {
+  background: url(../../assets/img/hero/hero.jpg);
+  background-size: cover;
+  z-index: -100;
+  opacity: 0.1;
 }
 
 /*-----------------------------------*\
-  #CONTACT
+  contacts
 \*-----------------------------------*/
-
-/* .mapbox {
+.mapbox {
   position: relative;
-  height: 250px;
-  width: 100%;
-  border-radius: 50rem;
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+  margin-bottom: 30px;
   border: 1px solid var(--jet);
   overflow: hidden;
-} */
+}
 
 .mapbox figure {
   height: 100%;
-  max-width: 700px;
-  max-height: 500px;
+  /* max-width: 700px;
+  max-height: 500px; */
 }
 
 .mapbox iframe {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(0);
   border-radius: 0.5rem;
 }
 
 @media (min-width: 580px) {
   .mapbox {
-    height: 380px;
+    height: 460px;
+    width: 560px;
     border-radius: 18px;
   }
 }
+
+@media (min-width: 768px) {
+  .mapbox {
+    height: 660px;
+    width: 720px;
+    border-radius: 18px;
+  }
+}
+
+/* section {
+  display: none;
+  min-height: 100vh;
+} */
+
+/* section.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */

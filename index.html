@@ -230,26 +230,7 @@
           <div>
             <img class="logo" src="assets/img/hero/20.png" alt="logo" />
 
-            <ul>
-              <li>
-                <a href="#" data-nav-link>Розклад занять</a>
-              </li>
-
-              <li>
-                <a href="#" data-nav-link>Контакти</a>
-              </li>
-
-              <li>
-                <a href="#" data-nav-link>Про ліцей</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="container">
-          <a href="" class="brand">ЛІЦЕЙ №20</a>
-          <div class="container__inner">
-            <ul>
+            <!-- <ul>
               <li>
                 <span>Івано-Франківської міської ради</span>
               </li>
@@ -266,6 +247,36 @@
               <li>
                 <a href="#" data-nav-link>Про ліцей</a>
               </li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="container">
+          <a href="" class="brand">ЛІЦЕЙ №20</a>
+          <div class="container__inner">
+            <ul>
+              <li>
+                <span>Івано-Франківської міської ради</span>
+              </li>
+            </ul>
+            <ul class="topNav">
+              <li>
+                <a class="link_names scedule" href="#scedule" data-nav-link
+                  >Розклад занять</a
+                >
+              </li>
+
+              <li>
+                <a class="link_names about" href="#about" data-nav-link
+                  >Про ліцей</a
+                >
+              </li>
+
+              <li>
+                <a class="link_names contacts" href="#contacts" data-nav-link
+                  >Контакти</a
+                >
+              </li>
             </ul>
           </div>
           <i class="uil uil-list-ui-alt" id="menu__btn"></i>
@@ -274,24 +285,13 @@
     </header>
 
     <main>
-      <section class="test" data-page="test">
-        <h3>section 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nobis
-          dolores numquam esse inventore quo. Alias provident, perferendis
-          quisquam quae molestiae, fugiat nemo iusto ut quibusdam sed ipsam
-          sequi tenetur. Sit eius assumenda dolorem illum modi animi ex ipsam
-          voluptas, nam a voluptatem repellat laudantium id qui fugit
-          necessitatibus, sequi quis voluptatibus accusantium dignissimos cumque
-          asperiores magni. Reprehenderit, quasi vitae. Molestiae officia omnis
-          doloribus deleniti dolore adipisci nam minus animi, est unde aliquid
-          voluptatem facere quaerat impedit accusamus provident, sunt
-          dignissimos aperiam minima illum eligendi! Ipsam nihil officia fugit
-          ut?
-        </p>
-      </section>
+      <section
+        id="scedule"
+        class="scedule__bg scedule active"
+        data-page="scedule"
+      ></section>
 
-      <section data-page="test-two">
+      <section id="about" class="about" data-page="about">
         <h3>section 2</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nobis
@@ -306,25 +306,37 @@
           dignissimos aperiam minima illum eligendi! Ipsam nihil officia fugit
           ut?
         </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nobis
+          dolores numquam esse inventore quo. Alias provident, perferendis
+          quisquam quae molestiae, fugiat nemo iusto ut quibusdam sed ipsam
+          sequi tenetur. Sit eius assumenda dolorem illum modi animi ex ipsam
+          voluptas, nam a voluptatem repellat laudantium id qui fugit
+          necessitatibus, sequi quis voluptatibus accusantium dignissimos cumque
+          asperiores magni. Reprehenderit, quasi vitae. Molestiae officia omnis
+          doloribus deleniti dolore adipisci nam minus animi, est unde aliquid
+          voluptatem facere quaerat impedit accusamus provident, sunt
+          dignissimos aperiam minima illum eligendi! Ipsam nihil officia fugit
+          ut?
+        </p>
       </section>
 
-      <section data-page="test-three">
+      <section id="contacts" class="contacts" data-page="contacts">
         <h3>section 3</h3>
-        <article class="contact" data-page="contact">
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.0361127501865!2d24.737868315677044!3d48.933753979294956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c182df0d3015%3A0x1bed6cf686a0f2da!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCAxMCwg0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LosINCY0LLQsNC90L4t0KTRgNCw0L3QutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDc2MDAw!5e0!3m2!1sru!2snl!4v1656965806734!5m2!1sru!2snl"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </figure>
-          </section>
-        </article>
+        <div class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.0361127501865!2d24.737868315677044!3d48.933753979294956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c182df0d3015%3A0x1bed6cf686a0f2da!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCAxMCwg0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LosINCY0LLQsNC90L4t0KTRgNCw0L3QutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDc2MDAw!5e0!3m2!1sru!2snl!4v1656965806734!5m2!1sru!2snl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </figure>
+        </div>
       </section>
     </main>
 

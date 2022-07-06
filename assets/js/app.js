@@ -156,20 +156,61 @@ bg3.addEventListener("click", () => {
 
 // =======================================================
 
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+// const navigationLinks = document.querySelectorAll("[data-nav-link]");
+// const pages = document.querySelectorAll("[data-page]");
 
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", () => {
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+// for (let i = 0; i < navigationLinks.length; i++) {
+//   navigationLinks[i].addEventListener("click", function () {
+//     for (let i = 0; i < pages.length; i++) {
+//       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+//         pages[i].classList.add("active");
+//         navigationLinks[i].classList.add("active");
+//         window.scrollTo(0, 0);
+//       } else {
+//         pages[i].classList.remove("active");
+//         navigationLinks[i].classList.remove("active");
+//       }
+//     }
+//   });
+// }
+
+// const sideNav = document.querySelector(".nav-links"),
+//   navList = sideNav.querySelectorAll("li"),
+//   totalNavList = navList.length;
+
+// for (let i = 0; i < totalNavList; i++) {
+//   const a = navList[i].querySelector("a");
+//   a.addEventListener("click", function () {
+//     this.classList.add("active");
+//   });
+// }
+
+const topNav = document.querySelector(".topNav"),
+  topNavList = topNav.querySelectorAll("li"),
+  totaltopNavList = topNavList.length,
+  allSections = document.querySelectorAll("section"),
+  totalSections = allSections.length;
+
+console.log("allSections", allSections);
+
+for (let i = 0; i < totaltopNavList; i++) {
+  const aTop = topNavList[i].querySelector("a");
+
+  aTop.addEventListener("click", function () {
+    for (let u = 0; u < totaltopNavList; u++) {
+      topNavList[u].querySelector("a").classList.remove("active");
     }
+    this.classList.add("active");
+
+    showSection(this);
   });
+}
+
+function showSection(el) {
+  for (let i = 0; i < totalSections; i++) {
+    allSections[i].classList.remove("active");
+  }
+
+  const target = el.getAttribute("href").split("#")[1];
+  document.querySelector("#" + target).classList.add("active");
 }
