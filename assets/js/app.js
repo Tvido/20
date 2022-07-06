@@ -175,29 +175,62 @@ bg3.addEventListener("click", () => {
 // }
 
 // const sideNav = document.querySelector(".nav-links"),
-//   navList = sideNav.querySelectorAll("li"),
-//   totalNavList = navList.length;
+//   sideNavList = sideNav.querySelectorAll("li"),
+//   totalSideNavList = NavList.length,
+//   allSideSections = document.querySelectorAll("section"),
+//   totalSideSections = allSideSections.length;
 
-// for (let i = 0; i < totalNavList; i++) {
-//   const a = navList[i].querySelector("a");
+// for (let i = 0; i < totalSideNavList; i++) {
+//   const a = sideNav[i].querySelector("a");
+
 //   a.addEventListener("click", function () {
+//     for (let i = 0; i < totalSideSections; i++) {
+//       allSideSections[i].classList.remove("back__section");
+//     }
+
+//     for (let u = 0; u < totalSideNavList; u++) {
+//       if (sideNavList[u].querySelector("a").classList.contains("active")) {
+//         allSideSections[u].classList.add("back__section");
+//       }
+
+//       sideNavList[u].querySelector("a").classList.remove("active");
+//     }
 //     this.classList.add("active");
+
+//     showSideSections(this);
 //   });
 // }
+
+// function showSideSections(el) {
+//   for (let i = 0; i < totalSideSections; i++) {
+//     allSideSections[i].classList.remove("active");
+//   }
+
+//   const target = el.getAttribute("href").split("#")[1];
+//   document.querySelector("#" + target).classList.add("active");
+// }
+
+// ====================================================================
 
 const topNav = document.querySelector(".topNav"),
   topNavList = topNav.querySelectorAll("li"),
   totaltopNavList = topNavList.length,
-  allSections = document.querySelectorAll("section"),
-  totalSections = allSections.length;
-
-console.log("allSections", allSections);
+  allTopSections = document.querySelectorAll("section"),
+  totalSections = allTopSections.length;
 
 for (let i = 0; i < totaltopNavList; i++) {
   const aTop = topNavList[i].querySelector("a");
 
   aTop.addEventListener("click", function () {
+    for (let i = 0; i < totalSections; i++) {
+      allTopSections[i].classList.remove("back__section");
+    }
+
     for (let u = 0; u < totaltopNavList; u++) {
+      if (topNavList[u].querySelector("a").classList.contains("active")) {
+        allTopSections[u].classList.add("back__section");
+      }
+
       topNavList[u].querySelector("a").classList.remove("active");
     }
     this.classList.add("active");
@@ -208,7 +241,7 @@ for (let i = 0; i < totaltopNavList; i++) {
 
 function showSection(el) {
   for (let i = 0; i < totalSections; i++) {
-    allSections[i].classList.remove("active");
+    allTopSections[i].classList.remove("active");
   }
 
   const target = el.getAttribute("href").split("#")[1];
