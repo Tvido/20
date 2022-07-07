@@ -317,7 +317,7 @@ nav i:hover {
   background: var(--color-white);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
   html {
     font-size: 12px;
   }
@@ -515,7 +515,7 @@ nav i:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   .customize__theme .choose__bg > div span {
     margin-right: 0;
   }
@@ -741,7 +741,7 @@ nav i:hover {
 .sidebar.close .profile-details .job {
   display: none;
 }
-.sidebar .profile-details .job {
+.sidebar .profile-details .name-job {
   font-size: 12px;
 }
 /* .home-section {
@@ -761,6 +761,19 @@ nav i:hover {
     display: none;
   }
   .sidebar {
+    width: 78px;
+  }
+
+  .sidebar .profile-details {
+    display: grid;
+  }
+
+  .sidebar .profile-details .name-job {
+    margin-left: 0.75rem;
+  }
+
+  .sidebar,
+  .sidebar .profile-details {
     width: 78px;
   }
 

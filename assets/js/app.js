@@ -2,7 +2,7 @@ const menuBtn = document.getElementById("menu__btn");
 const navbar = document.getElementById("navbar");
 const menu = document.querySelector(".menu");
 
-const offset = 50;
+const offset = 60;
 
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("menu__open");
@@ -154,64 +154,17 @@ bg3.addEventListener("click", () => {
   changeBg();
 });
 
-// =======================================================
+// ====================================================================
+function showSection(el) {
+  for (let i = 0; i < totalSections; i++) {
+    allTopSections[i].classList.remove("active");
+  }
 
-// const navigationLinks = document.querySelectorAll("[data-nav-link]");
-// const pages = document.querySelectorAll("[data-page]");
-
-// for (let i = 0; i < navigationLinks.length; i++) {
-//   navigationLinks[i].addEventListener("click", function () {
-//     for (let i = 0; i < pages.length; i++) {
-//       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-//         pages[i].classList.add("active");
-//         navigationLinks[i].classList.add("active");
-//         window.scrollTo(0, 0);
-//       } else {
-//         pages[i].classList.remove("active");
-//         navigationLinks[i].classList.remove("active");
-//       }
-//     }
-//   });
-// }
-
-// const sideNav = document.querySelector(".nav-links"),
-//   sideNavList = sideNav.querySelectorAll("li"),
-//   totalSideNavList = NavList.length,
-//   allSideSections = document.querySelectorAll("section"),
-//   totalSideSections = allSideSections.length;
-
-// for (let i = 0; i < totalSideNavList; i++) {
-//   const a = sideNav[i].querySelector("a");
-
-//   a.addEventListener("click", function () {
-//     for (let i = 0; i < totalSideSections; i++) {
-//       allSideSections[i].classList.remove("back__section");
-//     }
-
-//     for (let u = 0; u < totalSideNavList; u++) {
-//       if (sideNavList[u].querySelector("a").classList.contains("active")) {
-//         allSideSections[u].classList.add("back__section");
-//       }
-
-//       sideNavList[u].querySelector("a").classList.remove("active");
-//     }
-//     this.classList.add("active");
-
-//     showSideSections(this);
-//   });
-// }
-
-// function showSideSections(el) {
-//   for (let i = 0; i < totalSideSections; i++) {
-//     allSideSections[i].classList.remove("active");
-//   }
-
-//   const target = el.getAttribute("href").split("#")[1];
-//   document.querySelector("#" + target).classList.add("active");
-// }
+  const target = el.getAttribute("href").split("#")[1];
+  document.querySelector("#" + target).classList.add("active");
+}
 
 // ====================================================================
-
 const topNav = document.querySelector(".topNav"),
   topNavList = topNav.querySelectorAll("li"),
   totaltopNavList = topNavList.length,
@@ -239,11 +192,42 @@ for (let i = 0; i < totaltopNavList; i++) {
   });
 }
 
-function showSection(el) {
-  for (let i = 0; i < totalSections; i++) {
-    allTopSections[i].classList.remove("active");
-  }
+// ====================================================================
 
-  const target = el.getAttribute("href").split("#")[1];
-  document.querySelector("#" + target).classList.add("active");
+const hideNav = document.querySelector(".hideNav"),
+  hideNavList = hideNav.querySelectorAll("li"),
+  totalHideNavList = hideNavList.length;
+
+for (let i = 0; i < totalHideNavList; i++) {
+  const a = hideNavList[i].querySelector("a");
+
+  a.addEventListener("click", function () {
+    for (let j = 0; j < totalHideNavList; j++) {
+      hideNavList[j].querySelector("a").classList.remove("active");
+    }
+
+    this.classList.add("active");
+
+    showSection(this);
+  });
+}
+
+// ====================================================================
+
+const sideNav = document.querySelector(".sideNav"),
+  sideNavList = sideNav.querySelectorAll("li"),
+  totalSideNavList = sideNavList.lengts;
+
+for (let i = 0; i < totalSideNavList; i++) {
+  const a = sideNavList[i].querySelector("a");
+
+  a.addEventListener("click", function () {
+    for (let j = 0; j < totalSideNavList; j++) {
+      sideNavList[j].querySelector("a").classList.remove("active");
+    }
+
+    this.classList.add("active");
+
+    showSection(this);
+  });
 }
