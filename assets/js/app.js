@@ -216,7 +216,7 @@ for (let i = 0; i < totalHideNavList; i++) {
 
 const sideNav = document.querySelector(".sideNav"),
   sideNavList = sideNav.querySelectorAll("li"),
-  totalSideNavList = sideNavList.lengts;
+  totalSideNavList = sideNavList.length;
 
 for (let i = 0; i < totalSideNavList; i++) {
   const a = sideNavList[i].querySelector("a");

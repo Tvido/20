@@ -317,6 +317,11 @@ nav i:hover {
   background: var(--color-white);
 }
 
+.navbar {
+  opacity: 0.95;
+  background: var(--color-white);
+}
+
 @media screen and (max-width: 475px) {
   html {
     font-size: 12px;
