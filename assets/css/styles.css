@@ -828,13 +828,14 @@ section.main {
 }
 
 .section__grid .section__box .section__content {
+  position: relative;
   padding: 1rem;
 }
 
 .section__grid .section__box .section__content h3 {
   margin: 0 0 1rem;
   padding: 0;
-  font-size: 2rem;
+  font-size: 0.75rem;
   color: var(--color-dark);
 
   font-weight: var(--font-medium);
@@ -843,6 +844,7 @@ section.main {
 .section__grid .section__box .section__content p {
   margin: 0;
   padding: 0;
+
   color: var(--color-dark);
 }
 
