@@ -282,12 +282,25 @@ nav i:hover {
 }
 
 .navbar__active {
-  /* background: var(--color-white); */
   backdrop-filter: blur(10px);
+  background: linear-gradient(
+    145deg,
+    var(--color-secondary),
+    var(--color-white),
+    var(--color-white),
+    var(--color-white)
+  );
 }
 
 .navbar {
-  opacity: 0.95;
+  background: linear-gradient(
+    145deg,
+    var(--color-secondary),
+    var(--color-white),
+    var(--color-white),
+    var(--color-white)
+  );
+  opacity: 0.85;
   /* background: var(--color-white); */
   backdrop-filter: blur(10px);
 }
@@ -521,7 +534,7 @@ nav i:hover {
   left: 0;
   height: 100%;
   width: 260px;
-  background: var(--color-white);
+  /* background: var(--color-white); */
   z-index: 100;
   transition: all 0.5s ease;
   box-shadow: 0 0 0.4rem var(--color-primary);
@@ -823,6 +836,7 @@ section.main {
     var(--color-white),
     var(--color-white)
   );
+
   border: 1px solid var(--color-secondary);
   border-radius: 0.25rem;
   box-sizing: border-box;
@@ -858,6 +872,7 @@ section.main {
 .section__grid .section__box .section__content {
   position: relative;
   padding: 1rem;
+  backdrop-filter: blur(10px);
 }
 
 .section__grid .section__box .section__content h3 {
@@ -871,7 +886,7 @@ section.main {
 .section__grid .section__box .section__content p {
   margin: 0;
   padding: 0;
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-bold);
   color: var(--color-dark);
 }
 
