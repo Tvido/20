@@ -82,7 +82,7 @@ nav .topNav li a.active .link_names {
 }
 
 section {
-  /* position: relative; */
+  position: relative;
   display: block;
   padding-top: 5rem;
   padding-left: 7rem;
@@ -104,9 +104,17 @@ section.back__section {
 }
 
 section.active {
-  z-index: 2;
+  z-index: 5;
   opacity: 1;
   animation: slideSections 0.1s ease;
+  /* background: linear-gradient(
+    145deg,
+    var(--color-secondary),
+    var(--color-white),
+    var(--color-white),
+    var(--color-white),
+    var(--color-primary)
+  ); */
 }
 
 @keyframes slideSections {
@@ -146,7 +154,6 @@ section.active {
   display: block;
   pointer-events: none;
   border-radius: 0.5rem;
-
   animation: animate 3s linear infinite;
 }
 
