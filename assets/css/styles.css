@@ -84,7 +84,7 @@ nav .topNav li a.active .link_names {
 section {
   display: block;
   padding-top: 5rem;
-  padding-left: 6rem;
+  padding-left: 7rem;
   min-height: 100vh;
   position: fixed;
   opacity: 1;
@@ -128,7 +128,7 @@ section.active {
   max-width: 1200px;
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 1fr;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -156,6 +156,8 @@ nav {
 }
 
 .brand {
+  display: flex;
+  flex-wrap: nowrap;
   font-size: 1.75rem;
   font-weight: var(--font-bold);
   color: var(--color-primary);
@@ -294,6 +296,21 @@ nav i:hover {
 
   nav .container .brand,
   .container__inner ul li span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .navbar .brand {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    opacity: 0.95;
+    background: var(--color-white);
+  }
+
+  .container__inner .topNav {
     display: none;
   }
 }
@@ -714,18 +731,7 @@ nav i:hover {
 .sidebar .profile-details .name-job {
   font-size: 12px;
 }
-/* .home-section {
-  position: relative;
-  background: #e4e9f7;
-  height: 100vh;
-  left: 260px;
-  width: calc(100% - 260px);
-  transition: all 0.5s ease;
-} */
-/* .sidebar.close ~ .home-section {
-  left: 78px;
-  width: calc(100% - 78px);
-} */
+
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu {
     display: none;
@@ -792,12 +798,12 @@ section.main {
 
 .section__grid {
   display: block;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .section__grid .section__box {
   position: relative;
-  height: 140px;
+  height: 110px;
   background: var(--color-secondary);
   border: 1px solid var(--color-white);
   box-sizing: border-box;
@@ -821,7 +827,7 @@ section.main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
+  width: 30%;
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transform: skew(1deg, 1deg);
@@ -858,6 +864,10 @@ section.main {
 @media screen and (min-width: 998px) {
   .section__grid {
     grid-gap: 2rem;
+  }
+
+  .section__grid .section__box {
+    height: 140px;
   }
 }
 
