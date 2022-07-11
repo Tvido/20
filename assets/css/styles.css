@@ -340,13 +340,13 @@ nav i:hover {
 }
 
 .navbar {
-  background: linear-gradient(
+  /* background: linear-gradient(
     145deg,
     var(--color-secondary),
     var(--color-white),
     var(--color-white),
     var(--color-white)
-  );
+  ); */
   opacity: 0.85;
   /* background: var(--color-white); */
   backdrop-filter: blur(10px);
@@ -595,6 +595,9 @@ nav i:hover {
   z-index: 100;
   transition: all 0.5s ease;
   box-shadow: 0 0 0.4rem var(--color-primary);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .sidebar.close {
@@ -642,6 +645,7 @@ nav i:hover {
   position: relative;
   list-style: none;
   transition: all 0.4s ease;
+  overflow: hidden;
 }
 .sidebar .nav-links li:hover {
   background: var(--color-secondary);
@@ -748,6 +752,9 @@ nav i:hover {
 .sidebar li > div.profile-details {
   border-top: 1px solid var(--color-grey);
   box-shadow: 0 0 0.4rem var(--color-primary);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.2);
 }
 .sidebar .profile-details {
   position: fixed;
