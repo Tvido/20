@@ -892,6 +892,7 @@ section.main {
 .section__grid .section__box .section__content {
   position: relative;
   padding: 1rem;
+  height: 100%;
   backdrop-filter: blur(10px);
 }
 
