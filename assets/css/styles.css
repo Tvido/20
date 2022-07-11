@@ -944,6 +944,71 @@ section.main {
 }
 
 /*-----------------------------------*\
+  scedule
+\*-----------------------------------*/
+
+.scedule .tabs {
+  position: relative;
+  width: 100%;
+}
+
+.scedule .tabs .tabs__title {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.scedule .tabs .tab__header,
+.scedule .tabs .tab__body {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.scedule .tabs .tab__header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  z-index: 2;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.scedule .tabs .tab__header div {
+  width: 25%;
+  text-align: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.scedule .tabs .tab__header div.active {
+  color: var(--color-primary);
+}
+
+.scedule .tabs .tab__body {
+  position: relative;
+}
+
+.scedule .tabs .tab__body div {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  top: -100vh;
+}
+
+.scedule .tabs .tab__body div * {
+  margin: 1rem 0;
+}
+
+.scedule .tabs .tab__body div.active {
+  top: 0;
+  opacity: 1;
+  transition: top 0s ease-in-out 0s, opacity 0.3s ease-in-out 0.1s;
+}
+
+/*-----------------------------------*\
   contacts
 \*-----------------------------------*/
 .mapbox {
@@ -954,7 +1019,6 @@ section.main {
   margin-bottom: 30px;
   border: 1px solid var(--color-grey);
   box-shadow: 0 0 0.4rem var(--color-primary);
-
   overflow: hidden;
 }
 
