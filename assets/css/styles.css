@@ -126,6 +126,10 @@ section.active {
     var(--color-white),
     var(--color-white),
     var(--color-white),
+    var(--color-white),
+    var(--color-white),
+    var(--color-white),
+    var(--color-white),
     var(--color-primary)
   );
 }
