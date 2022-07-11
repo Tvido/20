@@ -195,7 +195,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 5rem 0.75rem 7rem;
+  padding: 0.75rem 2rem 0.75rem 7rem;
   z-index: 9;
   opacity: 0.95;
   transition: var(--transition);
@@ -361,6 +361,16 @@ nav i:hover {
 @media screen and (max-width: 767px) {
   nav .container .brand,
   .container__inner ul li span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .container {
+    grid-template-columns: 2fr 7fr;
+  }
+
+  .navbar .container i {
     display: none;
   }
 }
@@ -921,6 +931,13 @@ section.main {
 @media screen and (min-width: 1200px) {
   .section__grid {
     grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section__grid {
+    grid-gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
   }
 }
