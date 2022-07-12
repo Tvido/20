@@ -1020,7 +1020,6 @@ section.main {
 }
 
 /* tabs */
-
 .tabs .tab__body {
   text-align: center;
 }
@@ -1028,15 +1027,6 @@ section.main {
 table {
   margin: 3rem 0;
 }
-
-/* tr {
-  transition: all 0.3s ease-in;
-}
-
-tr:hover {
-  background: blur(10px);
-  transform: scale(1.03);
-} */
 
 th,
 td {
@@ -1051,13 +1041,20 @@ td {
   }
 }
 
+/* title */
+.section__title {
+  text-align: center;
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+  font-weight: var(--font-bold);
+}
+
 /*-----------------------------------*\
   annual plan
 \*-----------------------------------*/
 
-.annualPlan .annualPlan__title,
+/* .annualPlan .annualPlan__title, */
 .annualPlan .annualPlan__link {
-  padding: 2rem 1rem;
   text-align: center;
   font-weight: var(--font-bold);
 }
