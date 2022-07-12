@@ -1009,7 +1009,7 @@ section.main {
   top: -100vh;
 }
 
-.schedule .tabs .tab__body div * {
+.schedule .tabs .tab__body > div {
   margin: 1rem 0;
 }
 
@@ -1026,7 +1026,7 @@ section.main {
 }
 
 table {
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
 tr {
