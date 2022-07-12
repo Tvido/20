@@ -1029,14 +1029,14 @@ table {
   margin: 3rem 0;
 }
 
-tr {
+/* tr {
   transition: all 0.3s ease-in;
 }
 
 tr:hover {
   background: blur(10px);
   transform: scale(1.03);
-}
+} */
 
 th,
 td {
@@ -1049,6 +1049,37 @@ td {
   .table {
     width: 90%;
   }
+}
+
+/*-----------------------------------*\
+  annual plan
+\*-----------------------------------*/
+
+.annualPlan .annualPlan__title,
+.annualPlan .annualPlan__link {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-weight: var(--font-bold);
+}
+
+.annualPlan .annualPlan__table table {
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.annualPlan__link a {
+  color: var(--color-dark);
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-grey);
+  border-radius: 0.25rem;
+}
+
+.annualPlan__link a:hover {
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--color-primary);
 }
 
 /*-----------------------------------*\
