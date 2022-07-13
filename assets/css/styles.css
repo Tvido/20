@@ -963,11 +963,6 @@ section.main {
   width: 100%;
 }
 
-.schedule .tabs .tabs__title {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
 .schedule .tabs .tab__header,
 .schedule .tabs .tab__body {
   margin: 0 auto;
@@ -1098,6 +1093,7 @@ td {
   box-shadow: 0 0 0.4rem var(--color-primary);
   padding: 1rem;
   margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
 }
 
 .terms .article h3 {
@@ -1136,9 +1132,9 @@ td {
 \*-----------------------------------*/
 .mapbox {
   position: relative;
-  height: 140px;
-  width: 260px;
-  border-radius: 16px;
+  height: 250px;
+  width: 96%;
+  border-radius: 1rem;
   margin-bottom: 30px;
   border: 1px solid var(--color-grey);
   box-shadow: 0 0 0.4rem var(--color-primary);
@@ -1160,15 +1156,17 @@ td {
 @media (min-width: 580px) {
   .mapbox {
     height: 460px;
-    width: 560px;
-    border-radius: 18px;
   }
 }
 
 @media (min-width: 768px) {
   .mapbox {
+    height: 560px;
+  }
+}
+
+@media (min-width: 988px) {
+  .mapbox {
     height: 660px;
-    width: 720px;
-    border-radius: 18px;
   }
 }
