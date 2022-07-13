@@ -344,15 +344,7 @@ nav i:hover {
 }
 
 .navbar {
-  /* background: linear-gradient(
-    145deg,
-    var(--color-secondary),
-    var(--color-white),
-    var(--color-white),
-    var(--color-white)
-  ); */
   opacity: 0.85;
-  /* background: var(--color-white); */
   backdrop-filter: blur(10px);
 }
 
@@ -386,7 +378,6 @@ nav i:hover {
 
   .navbar {
     opacity: 0.95;
-    /* background: var(--color-white); */
   }
 
   .container__inner .topNav {
@@ -812,20 +803,6 @@ nav i:hover {
   align-items: center;
 }
 
-/* .sidebar .profile-details img {
-  height: 52px;
-  width: 52px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin: 0 14px 0 12px;
-  background: #1d1b31;
-  transition: all 0.5s ease;
-}
-
-.sidebar.close .profile-details img {
-  padding: 10px;
-} */
-
 .sidebar .profile-details .profile_name a {
   color: var(--color-dark);
 }
@@ -932,6 +909,24 @@ section.main {
   box-sizing: border-box;
   margin-bottom: 1rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 253, 0.1) inset;
+  overflow: hidden;
+}
+
+.section__grid a .section__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  transform: skewX(45deg) translateX(450px);
+  transition: var(--transition);
+}
+
+.section__grid a .section__box:hover::before {
+  transform: skewX(45deg) translateX(-200px);
+  transition: var(--transition);
 }
 
 .section__grid .section__box .section__content {
