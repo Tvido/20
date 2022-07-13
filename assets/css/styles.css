@@ -1076,7 +1076,30 @@ td {
 }
 
 /*-----------------------------------*\
-  contacts
+  bullying
+\*-----------------------------------*/
+
+.bullying .bullying__container {
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem 8%; */
+}
+
+.bullying .bullying__container .bullying__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 3rem;
+}
+
+.bullying .bullying__container .bullying__gallery img {
+  width: 100%;
+}
+
+/*-----------------------------------*\
+  terms
 \*-----------------------------------*/
 
 .terms .terms__link {

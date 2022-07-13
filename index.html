@@ -22,7 +22,7 @@
     />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
-
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
     <title>Ліцей №20</title>
   </head>
   <body>
@@ -190,12 +190,12 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="#bullying">
             <i class="bx bx-history"></i>
             <span class="link_name">Булінг</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Булінг</a></li>
+            <li><a class="link_name" href="#bullying">Булінг</a></li>
           </ul>
         </li>
 
@@ -1643,6 +1643,42 @@
         </div>
       </section>
 
+      <section
+        id="bullying"
+        class="section__bg bullying active"
+        data-page="bullying"
+      >
+        <div class="section__title">булінг</div>
+
+        <div class="bullying__container">
+          <div class="bullying__gallery">
+            <a
+              href="assets/img/bullying/1.jpg"
+              data-lightbox="model"
+              data-title="Caption1"
+            >
+              <img src="assets/img/bullying/1.jpg" alt="" />
+            </a>
+
+            <a
+              href="assets/img/bullying/2.jpg"
+              data-lightbox="model"
+              data-title="Caption2"
+            >
+              <img src="assets/img/bullying/2.jpg" alt="" />
+            </a>
+
+            <a
+              href="assets/img/bullying/3.jpg"
+              data-lightbox="model"
+              data-title="Caption3"
+            >
+              <img src="assets/img/bullying/3.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="terms" class="terms section__bg" data-page="terms">
         <div class="section__title">УМОВИ ДОСТУПНОСТІ ЗО</div>
 
@@ -2131,11 +2167,7 @@
         </p>
       </section>
 
-      <section
-        id="contacts"
-        class="section__bg contacts avtive"
-        data-page="contacts"
-      >
+      <section id="contacts" class="section__bg contacts" data-page="contacts">
         <div class="section__title">Наші контакти</div>
         <div class="mapbox" data-mapbox>
           <figure>
@@ -2204,5 +2236,6 @@
     </div>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.js"></script>
   </body>
 </html>
