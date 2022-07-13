@@ -919,7 +919,7 @@ section.main {
   left: 0;
   width: 100px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.3);
   transform: skewX(45deg) translateX(450px);
   transition: var(--transition);
 }
