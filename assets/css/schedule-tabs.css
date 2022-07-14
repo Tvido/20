@@ -1,0 +1,76 @@
+.schedule .tabs {
+  position: relative;
+  width: 100%;
+}
+
+.schedule .tabs .tab__header,
+.schedule .tabs .tab__body {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.schedule .tabs .tab__header {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  z-index: 2;
+}
+
+.schedule .tabs .tab__header div {
+  width: 25%;
+  text-align: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.schedule .tabs .tab__header div.active {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.schedule .tabs .tab__body {
+  position: relative;
+}
+
+.schedule .tabs .tab__body div {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  top: -100vh;
+}
+
+.schedule .tabs .tab__body > div {
+  margin: 1rem 0;
+}
+
+.schedule .tabs .tab__body div.active {
+  top: 0;
+  opacity: 1;
+  transition: top 0s ease-in-out 0s, opacity 0.3s ease-in-out 0.1s;
+}
+
+.tabs .tab__body {
+  text-align: center;
+}
+
+table {
+  margin: 3rem 0;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+@media only screen and (max-width: 767px) {
+  .table {
+    width: 90%;
+  }
+}

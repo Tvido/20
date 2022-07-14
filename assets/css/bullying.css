@@ -1,0 +1,37 @@
+.bullying .bullying__container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 8%;
+}
+
+.bullying .bullying__container .bullying__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 3rem;
+}
+
+.bullying .bullying__container .bullying__gallery img {
+  width: 100%;
+}
+
+.bullying .bullying__link {
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 3rem;
+}
+
+.bullying__link a {
+  color: var(--color-dark);
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-grey);
+  border-radius: 0.25rem;
+}
+
+.bullying__link a:hover {
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--color-primary);
+}

@@ -1,0 +1,192 @@
+.customize__theme {
+  background: rgba(255, 255, 255, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  display: none;
+}
+
+.customize__theme .card {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+  box-shadow: 0 0 2rem var(--color-primary);
+  transition: var(--transition);
+}
+
+.customize__theme .font__size {
+  margin-top: 2rem;
+}
+
+.customize__theme .font__size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.customize__theme .choose__size {
+  background: var(--color-secondary);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.customize__theme .choose__size span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.customize__theme .choose__size span.active {
+  background: var(--color-primary);
+}
+
+.customize__theme .color {
+  margin-top: 1.5rem;
+}
+
+.customize__theme .choose__color {
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customize__theme .choose__color span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.customize__theme .choose__color span:nth-child(1) {
+  background: hsl(252, 75%, 60%);
+}
+
+.customize__theme .choose__color span:nth-child(2) {
+  background: hsl(52, 75%, 60%);
+}
+
+.customize__theme .choose__color span:nth-child(3) {
+  background: hsl(352, 75%, 60%);
+}
+
+.customize__theme .choose__color span:nth-child(4) {
+  background: hsl(162, 75%, 60%);
+}
+
+.customize__theme .choose__color span:nth-child(5) {
+  background: hsl(212, 75%, 60%);
+}
+
+.customize__theme .choose__color span.active {
+  border: 0.35rem solid var(--color-white);
+}
+
+.customize__theme .bg {
+  margin-top: 1.5rem;
+}
+
+.customize__theme .choose__bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+
+  gap: 1rem;
+}
+
+.customize__theme .choose__bg > div {
+  padding: var(--card-padding);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.customize__theme .choose__bg > div.active {
+  border: 2px solid var(--color-primary);
+}
+
+.customize__theme .choose__bg .bg-1 {
+  background: white;
+  color: black;
+}
+
+.customize__theme .choose__bg .bg-2 {
+  background: hsl(252, 30%, 20%);
+  color: white;
+}
+
+.customize__theme .choose__bg .bg-3 {
+  background: hsl(252, 30%, 10%);
+  color: white;
+}
+
+.customize__theme .choose__bg > div span {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--color-grey);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .customize__theme .card {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .customize__theme .card {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav .nav .admin__panel p {
+    display: none;
+  }
+
+  .customize__theme .card {
+    width: 90%;
+  }
+
+  .customize__theme .card .choose__bg h5 {
+    display: none;
+  }
+
+  .customize__theme .choose__bg > div span {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .customize__theme .choose__bg > div span {
+    margin-right: 0;
+  }
+}

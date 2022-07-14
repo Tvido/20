@@ -1,0 +1,25 @@
+.annualPlan .annualPlan__link {
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 3rem;
+}
+
+.annualPlan .annualPlan__table table {
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.annualPlan__link a {
+  color: var(--color-dark);
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-grey);
+  border-radius: 0.25rem;
+}
+
+.annualPlan__link a:hover {
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--color-primary);
+}
