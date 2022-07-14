@@ -1,4 +1,3 @@
-// ====================================================================
 function showSection(el) {
   for (let i = 0; i < totalSections; i++) {
     allTopSections[i].classList.remove("active");

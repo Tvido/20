@@ -224,7 +224,7 @@ nav .topNav li a.active .link_names {
   color: var(--color-primary);
 }
 
-nav .container i {
+.container i {
   color: var(--color-dark);
   font-weight: var(--font-bold);
   font-size: 1.75rem;
@@ -376,3 +376,7 @@ nav i:hover {
     display: none;
   }
 }
+
+/*============================================================================*\
+  sections
+/*============================================================================*/
