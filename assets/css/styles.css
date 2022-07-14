@@ -361,7 +361,7 @@ nav i:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 998px) {
   .navbar .container {
     grid-template-columns: 2fr 7fr;
   }
